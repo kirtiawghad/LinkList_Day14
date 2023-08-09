@@ -1,6 +1,7 @@
 package com.bl;
 public class LinkedListMain {
     public static void main(String[] args) {
+
         LinkedList<Integer> linkedList1 = new LinkedList<>();
 
         linkedList1.add(70);
@@ -19,6 +20,14 @@ public class LinkedListMain {
         System.out.println();
 
         System.out.println("Element popped from head => " + linkedList2.pop());
+        linkedList2.display();
+        System.out.println();
+
+        linkedList2.add(56);
+        linkedList2.display();
+        System.out.println();
+
+        System.out.println("Element popped from last => " + linkedList2.popLast());
         linkedList2.display();
 
     }
