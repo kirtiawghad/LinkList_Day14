@@ -1,5 +1,7 @@
 package com.bl;
 public class LinkedListMain {
+
+
     public static void main(String[] args) {
 
         LinkedList<Integer> linkedList1 = new LinkedList<>();
@@ -30,6 +32,21 @@ public class LinkedListMain {
         System.out.println("Element popped from last => " + linkedList2.popLast());
         linkedList2.display();
 
+        System.out.println();
+
+        linkedList2.append(70);
+        linkedList2.display();
+        System.out.println();
+        Node<Integer> node = linkedList2.search(30);
+        if(node != null){
+            System.out.println("Data found");
+            linkedList2.display();
+        }
+        else {
+            System.out.println("Data not found");
+        }
+
     }
+
 
 }
