@@ -41,6 +41,12 @@ public class LinkedList <E> {
         }
     }
 
+    public E pop() {
+        E temp = head.getData();
+        head = head.getNext();
+        return temp;
+    }
 }
+
 
 

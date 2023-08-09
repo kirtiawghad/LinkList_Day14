@@ -1,7 +1,6 @@
 package com.bl;
 public class LinkedListMain {
     public static void main(String[] args) {
-
         LinkedList<Integer> linkedList1 = new LinkedList<>();
 
         linkedList1.add(70);
@@ -16,6 +15,10 @@ public class LinkedListMain {
         linkedList2.append(30);
         linkedList2.append(70);
 
+        linkedList2.display();
+        System.out.println();
+
+        System.out.println("Element popped from head => " + linkedList2.pop());
         linkedList2.display();
 
     }
